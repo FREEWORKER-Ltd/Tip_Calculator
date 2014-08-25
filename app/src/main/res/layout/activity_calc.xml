@@ -1,0 +1,215 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context=".CalcActivity">
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:text="@string/bill_total"
+            android:layout_span="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+        <EditText
+            android:id="@+id/billEditText"
+            android:layout_span="3"
+            android:inputType="numberDecimal" />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:text=""
+            android:layout_column="0"/>
+
+        <TextView
+            android:text="@string/tenPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+        <TextView
+            android:text="@string/fifteenPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+        <TextView
+            android:text="@string/twentyPC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:text="@string/tipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+        <EditText
+            android:id="@+id/tip10EditText"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/tip15EditText"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/tip20EditText"
+            android:inputType="numberDecimal"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:text="@string/bill_total"/>
+
+        <EditText
+            android:id="@+id/total10EditText"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/total15EditText"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/total20EditText"
+            android:inputType="numberDecimal"
+            />
+
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:text="@string/customTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+        <SeekBar
+            android:id="@+id/customSeekBar"
+            android:layout_span="2"
+            android:max="100"
+            android:progress="18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+        <TextView
+            android:id="@+id/customTipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:text="@string/tipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+        <EditText
+            android:id="@+id/tipCustomEditText"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:text="@string/tipTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+        <EditText
+            android:id="@+id/totalCustomEditText"
+            android:inputType="numberDecimal"
+            />
+
+    </TableRow>
+
+</TableLayout>
